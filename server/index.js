@@ -1,6 +1,7 @@
 // imports
 import express from 'express'
 import cors from 'cors'
+import axios from 'axios'
 
 // global variables
 const PORT = process.env.PORT || 5000
