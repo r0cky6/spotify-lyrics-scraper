@@ -1,0 +1,65 @@
+@import './__vars.scss';
+@import './__fonts.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-pr);
+    color: var(--text)
+}
+.container{
+    display: grid;
+    margin: 0 auto;
+}
+input{
+    border: none;
+    outline: none;
+    cursor: text;
+}
+button, a.btn{
+    text-decoration: none;
+    font: 1.1rem var(--font-pr);
+    padding: .125em 1em;
+    border-radius: .125em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text);
+    background-color: var(--bg_pr);
+}
+body{
+    background-color: var(--bg_pr);
+}
+.container{
+    width: #{'min(1280px, 95vw)'}
+}
+.header{
+    background-color: var(--bg_darker);
+    padding: .5em;
+    .container{
+        place-content: center right;
+        grid-auto-flow: column;
+        column-gap: .5em;
+        a{
+            font: 1.1rem var(--font-pr);
+            color: #fefefe;
+            text-decoration: none;
+            &:hover{
+                color: #aaaaaa;
+            }
+        }
+    }
+}
+
+
+
+
+
+// MESSAGE
+
+.message__wrapper{
+    position: absolute;
+    left: 50%; bottom: 0;
+    transform: translate(-50%, 0);
+}

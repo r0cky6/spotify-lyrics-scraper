@@ -1,0 +1,56 @@
+@import './__vars.scss';
+@import './__fonts.scss';
+.login{
+  padding-top: 10em;
+  position: relative;
+}
+.login .container{
+  position: absolute;
+  left: 50%;
+  translate: -50% 0;
+}
+.login__form{
+  background: var(--bg_darker);
+  padding: 2em;
+  border-radius: .3em;
+  place-self: center;
+  display: grid;
+  row-gap: .7em;
+  width: 300px;
+  .login__input, .login__submit-btn{
+    border-radius: .2em;
+    padding: .3em 1em;
+    background: var(--bg_pr);
+    color: #fefefe;
+    font: 1.125rem var(--font-pr);
+  }
+  .login__submit-btn, .login__label{
+    cursor: pointer;
+  }
+  .login__submit-btn{
+    background: var(--success);
+    font-weight: 600;
+    width: 100%;
+  }
+  .login__form-bottom-row{
+    display: grid;
+    grid-auto-flow: column;
+    place-content: center space-evenly;
+    width: 100%;
+    .login__label{
+      color: #fefefe;
+      opacity: 0.7;
+      cursor: pointer;
+      user-select: none;
+    }
+    .login__label, .login__toggle-btn{
+      font: 1em var(--font-pr);
+      background: none;
+      opacity: .7;
+      transition: .3s ease;
+    }
+    .login__label:hover, .login__toggle-btn:hover{
+      opacity: 1;
+    }
+  }
+}
