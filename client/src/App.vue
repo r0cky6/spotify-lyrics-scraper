@@ -3,7 +3,7 @@
     <header class='header'>
       <div class="container">
         <router-link to="/">home</router-link>
-        <router-link to="/user">user</router-link>
+        <router-link to="/u">user</router-link>
         <router-link to="/login">login</router-link>
         <router-link to="/signup">signup</router-link>
         <router-link to="/logout">logout</router-link>

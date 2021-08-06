@@ -11,7 +11,7 @@ const actions = {
 }
 const mutations = {
   async setCurrentUser( state ){
-    state.currentUser = await axios.get('/api/user').then(res => res.data)
+    state.currentUser = await axios.get('/api/u/').then(res => res.data)
   },
   clearCurrentUser( state ){
     state.currentUser = undefined
