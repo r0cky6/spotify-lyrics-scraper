@@ -1,2 +1,2 @@
 # spotify-lyrics-scraper
-Tool to find songs from your spotify playlist by treir lyrics
+An app to find songs from a spotify playlist by treir lyrics
